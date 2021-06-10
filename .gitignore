@@ -1,2 +1,5 @@
 /data
-/tools
+/tools/miniconda3.sh
+/tools/env.sh
+/tools/miniconda3
+/exp

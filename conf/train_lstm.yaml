@@ -1,0 +1,35 @@
+# environment options
+seed: 777
+gpu: 0
+verbose: 1
+
+# training options
+test_interval: 1 
+loss_fn: batch_pit
+subsampling: 10
+epoch: 1
+batchsize: 10
+
+# feature options
+feat_dim: 83
+
+# DataLoader 
+num_workers: 2
+max_frames: 80000
+subsampling: 10
+
+# model setting
+model: blstm
+hidden_size: 256
+emb_lstm_layer: 10
+use_attractor: True
+initial_model: /share/nas167/chengsam/SpeakerDiarization/good_good_eat/CTC_EEND/egs/ami/v1/exp/Paper_EDA/model/model000000100.model
+
+# Optimizer
+optimizer: adam
+lr: 0.001
+lr_decay: 0.95
+
+# Parallel distributed
+distributed: 1
+port: 1314
